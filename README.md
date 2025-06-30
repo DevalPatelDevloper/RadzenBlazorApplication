@@ -1,4 +1,4 @@
-﻿# ✅ RadzenBlazorApplication - Proof of Concept
+﻿# ✅ Radzen Blazor VSIX Template Application - Proof of Concept
 This repository presents a fully functional Proof of Concept (PoC) for a modular Blazor Server application built using the Radzen Blazor VSIX Template. It showcases how to scaffold and extend Blazor apps using Radzen’s rich component library and project structure.
 
 # 📋 Prerequisites
