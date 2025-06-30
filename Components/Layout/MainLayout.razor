@@ -1,0 +1,15 @@
+@inherits LayoutComponentBase
+
+<div class="main-layout" style="display: flex; min-height: 100vh;">
+    <!-- Sidebar -->
+    <div style="width: 250px; background: #f8f9fa; box-shadow: 2px 0 5px rgba(0,0,0,0.05);">
+        <RadzenPanelMenu>
+            <RadzenPanelMenuItem Text="Home" Path="" Icon="home" />
+            <RadzenPanelMenuItem Text="Users" Path="users" Icon="people" />
+        </RadzenPanelMenu>
+    </div>
+    <!-- Main content -->
+    <div style="flex: 1; padding: 24px;">
+        @Body
+    </div>
+</div>

@@ -1,0 +1,44 @@
+﻿@page "/users"
+@inject NotificationService NotificationService
+
+<h3>Users List</h3>
+
+<RadzenButton Text="Show Notification"
+              Click="@(() => ShowNotification())"
+              Style="margin-bottom: 20px;" />
+
+<RadzenDataGrid Data="@users" TItem="User" AllowPaging="true" PageSize="3">
+    <Columns>
+        <RadzenDataGridColumn TItem="User" Property="Id" Title="ID" />
+        <RadzenDataGridColumn TItem="User" Property="Name" Title="Name" />
+        <RadzenDataGridColumn TItem="User" Property="Email" Title="Email" />
+    </Columns>
+</RadzenDataGrid>
+
+@code {
+    List<User> users = new()
+    {
+        new User { Id = 1, Name = "Alice", Email = "alice@example.com" },
+        new User { Id = 2, Name = "Bob", Email = "bob@example.com" },
+        new User { Id = 3, Name = "Charlie", Email = "charlie@example.com" },
+        new User { Id = 4, Name = "Diana", Email = "diana@example.com" }
+    };
+
+    void ShowNotification()
+    {
+        NotificationService.Notify(new NotificationMessage
+        {
+            Severity = NotificationSeverity.Info,
+            Summary = "Users Loaded",
+            Detail = "This is a Radzen notification.",
+            Duration = 3000
+        });
+    }
+
+    public class User
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+    }
+}
