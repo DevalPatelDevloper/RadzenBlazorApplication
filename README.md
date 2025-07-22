@@ -1,6 +1,22 @@
 ﻿# ✅ Radzen Blazor VSIX Template Application - Proof of Concept
 This repository presents a fully functional Proof of Concept (PoC) for a modular Blazor Server application built using the Radzen Blazor VSIX Template. It showcases how to scaffold and extend Blazor apps using Radzen’s rich component library and project structure.
 
+
+### Tested On
+
+This PoC has been tested on the following environment:
+
+| Tool/Framework       | Version            |
+| -------------------- | ------------------ |
+| .NET SDK             | .NET 9 (Preview)   |
+| Blazor               | Server-side Blazor |
+| Visual Studio        | 2022 (v17.x)       |
+| Radzen.Blazor NuGet  | Latest             |
+| Radzen VSIX Template | Trial version used |
+
+You can try the [Radzen Blazor Studio VSIX Extension](https://marketplace.visualstudio.com/) from the Visual Studio Marketplace.
+
+
 # 📋 Prerequisites
 
 ### Tools Required
@@ -19,6 +35,15 @@ This repository presents a fully functional Proof of Concept (PoC) for a modular
 
 ### HTTPS Development Certificate
 - dotnet dev-certs https --trust (if needed)
+
+###  Run the Application (Cross-platform CLI)
+
+git clone https://github.com/<your-repo>/RadzenBlazorApplication.git
+cd RadzenBlazorApplication
+dotnet restore
+dotnet build
+dotnet run
+
 
 ### 📌 What the PoC Is About
 
@@ -41,7 +66,7 @@ The RadzenBlazorApplication PoC demonstrates:
 ### 🛠 How to Implement the Solution
 
 ### Step 1: Install Radzen Template
-- Install Radzen Blazor Studio VSIX Extension from Visual Studio Marketplace
+- Install Radzen Blazor Studio VSIX Extension from Visual Studio Marketplace [Trail]
 - Restart Visual Studio after installation
 
 ### Step 2: Create the Project
@@ -54,7 +79,7 @@ The RadzenBlazorApplication PoC demonstrates:
 - Right-click solution > Restore NuGet Packages
 
 ### Step 4: Run the Application
-- Press F5 or Ctrl+F5 to launch the app
+- Use F5 or CLI (dotnet run) to launch the app
 
 The default Radzen layout and navigation will load
 
@@ -80,17 +105,31 @@ The default Radzen layout and navigation will load
 ### 3. Reporting System
 - Integrate charts, downloadable reports, and filterable grids
 
+
+### Demo – UI Snapshots & Interaction
+🔹 Home Page
+### Demo – UI Snapshots & Interaction  
+🔹 Home Page  
+![Home Page Screenshot](screenshots/home-page.PNG)
+
+🔹 Users Page with Notification  
+![Users Page Screenshot](screenshots/users-page.PNG)  
+
+🔹 Users DataGrid with Paging  
+![DataGrid Screenshot](screenshots/data-grid.PNG)  
+
+
 ### 🧯 Troubleshooting Steps
 
 ### Problem	Solution
 
-| Problem                         | Solution                                                                 |
-|---------------------------------|--------------------------------------------------------------------------|
-| Template not showing            | Confirm Radzen VSIX is installed and restart Visual Studio              |
+| Problem                         | Solution                                                              |
+| ------------------------------- | --------------------------------------------------------------------- |
+| Template not visible            | Make sure VSIX extension is installed and restart Visual Studio       |
 | Radzen components not rendering | Add `@using Radzen` and `@using Radzen.Blazor` to `_Imports.razor`    |
-| Styling/layout issues           | Check CSS references and layout files (`MainLayout.razor`)              |
-| NuGet errors                    | Right-click solution > Restore NuGet Packages                           |
-| API/backend not working         | Check connection strings or enable CORS                                 |
+| Layout or style issues          | Check for missing layout files or CSS in `_Host.cshtml`               |
+| Build errors                    | Restore packages and clean the solution                               |
+| Notification not working        | Add `<RadzenNotification />` in layout or page and inject the service |                            |
 
 
 ### 📁 Project Structure
@@ -112,4 +151,6 @@ The default Radzen layout and navigation will load
 - [Radzen Forum](https://forum.radzen.com/)
 
 ### 🧾 Summary
-The `RadzenBlazorApplication` PoC offers a solid foundation for building scalable, maintainable Blazor Server applications using Radzen’s component library. Whether you're building internal tools, dashboards, or admin panels, this template accelerates development with best practices and pre-built UI elements.
+This PoC demonstrates how to rapidly build a scalable, responsive Blazor Server application using the Radzen Blazor Studio VSIX Template and Radzen’s component library. Perfect for dashboards, admin tools, and internal web portals.
+
+💬 Try out Radzen Blazor Studio VSIX (Trial) to experience low-code Blazor development.

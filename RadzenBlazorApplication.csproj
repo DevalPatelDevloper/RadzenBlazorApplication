@@ -10,4 +10,8 @@
   <ItemGroup>
     <PackageReference Include="Radzen.Blazor" Version="*" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="screenshots\" />
+  </ItemGroup>
 </Project>

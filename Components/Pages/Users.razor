@@ -7,6 +7,8 @@
               Click="@(() => ShowNotification())"
               Style="margin-bottom: 20px;" />
 
+<RadzenNotification />
+
 <RadzenDataGrid Data="@users" TItem="User" AllowPaging="true" PageSize="3">
     <Columns>
         <RadzenDataGridColumn TItem="User" Property="Id" Title="ID" />
