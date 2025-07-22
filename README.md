@@ -6,13 +6,13 @@ This repository presents a fully functional Proof of Concept (PoC) for a modular
 
 This PoC has been tested on the following environment:
 
-| Tool/Framework       | Version            |
-| -------------------- | ------------------ |
-| .NET SDK             | .NET 9 (Preview)   |
-| Blazor               | Server-side Blazor |
-| Visual Studio        | 2022 (v17.x)       |
-| Radzen.Blazor NuGet  | Latest             |
-| Radzen VSIX Template | Trial version used |
+| Tool/Framework       | Version                |
+| -------------------- | ---------------------- |
+| .NET SDK             | .NET 9 (Preview)       |
+| Blazor               | Server-side Blazor     |
+| Visual Studio        | 2022 (latest version)  |
+| Radzen.Blazor NuGet  | Latest                 |
+| Radzen VSIX Template | Trial version used     |
 
 You can try the [Radzen Blazor Studio VSIX Extension](https://marketplace.visualstudio.com/) from the Visual Studio Marketplace.
 
