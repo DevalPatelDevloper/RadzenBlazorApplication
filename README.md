@@ -1,4 +1,4 @@
-﻿# ✅ Radzen Blazor VSIX Template Application - Proof of Concept
+# ✅ Radzen Blazor VSIX Template Application - Proof of Concept
 This repository presents a fully functional Proof of Concept (PoC) for a modular Blazor Server application built using the Radzen Blazor VSIX Template. It showcases how to scaffold and extend Blazor apps using Radzen’s rich component library and project structure.
 
 
@@ -38,11 +38,11 @@ You can try the [Radzen Blazor Studio VSIX Extension](https://marketplace.visual
 
 ###  Run the Application (Cross-platform CLI)
 
-git clone https://github.com/<your-repo>/RadzenBlazorApplication.git
-cd RadzenBlazorApplication
-dotnet restore
-dotnet build
-dotnet run
+# git clone https://github.com/DevalPatelDevloper/RadzenBlazorApplication.git/RadzenBlazorApplication.git
+# cd RadzenBlazorApplication
+# dotnet restore
+# dotnet build
+# dotnet run
 
 
 ### 📌 What the PoC Is About
@@ -106,8 +106,6 @@ The default Radzen layout and navigation will load
 - Integrate charts, downloadable reports, and filterable grids
 
 
-### Demo – UI Snapshots & Interaction
-🔹 Home Page
 ### Demo – UI Snapshots & Interaction  
 🔹 Home Page  
 ![Home Page Screenshot](screenshots/home-page.PNG)
