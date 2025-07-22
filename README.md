@@ -38,11 +38,11 @@ You can try the [Radzen Blazor Studio VSIX Extension](https://marketplace.visual
 
 ###  Run the Application (Cross-platform CLI)
 
-# git clone https://github.com/DevalPatelDevloper/RadzenBlazorApplication.git/RadzenBlazorApplication.git
-# cd RadzenBlazorApplication
-# dotnet restore
-# dotnet build
-# dotnet run
+- git clone https://github.com/DevalPatelDevloper/RadzenBlazorApplication.git/RadzenBlazorApplication.git
+- cd RadzenBlazorApplication
+- dotnet restore
+- dotnet build
+- dotnet run
 
 
 ### 📌 What the PoC Is About
